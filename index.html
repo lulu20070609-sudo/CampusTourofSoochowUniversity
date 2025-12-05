@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東吳大學校園導覽</title>
+    <style>
+        body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; line-height: 1.6; margin: 40px; }
+        .btn { display: inline-block; padding: 14px 24px; background: #1a73e8; color: #fff; border: none; font-size: 16px; cursor: pointer; transition: transform .15s ease, filter .15s ease, box-shadow .15s ease; font-weight: 700; letter-spacing: .3px; clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%); box-shadow: 0 10px 24px rgba(0,0,0,0.10); }
+        .btn:hover { filter: brightness(0.98); transform: scale(1.04); box-shadow: 0 14px 28px rgba(0,0,0,0.12); }
+        .btn.green { background: #2e7d32; }
+        .btn.orange { background: #ef6c00; }
+        .buttons { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; max-width: 520px; margin: 12px auto 0; }
+        .buttons .btn { width: 100%; text-align: center; }
+        .title { font-size: 36px; font-weight: 800; text-align: center; margin: 0 0 8px; color: #0d47a1; display: inline-flex; align-items: center; gap: 10px; }
+        .logo { width: 40px; height: 40px; object-fit: cover; border-radius: 50%; }
+        .subtitle { text-align: left; color: #555; font-size: 18px; margin: 0 0 16px; }
+        .subtitle strong { font-weight: 800; display: block; margin-bottom: 8px; }
+        .subtitle p { margin: 8px 0 0; }
+        .images { display: grid; grid-template-columns: repeat(2, minmax(0, 360px)); gap: 12px; justify-content: center; align-items: center; margin: 16px 0; }
+        .images img { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    </style>
+</head>
+
+<body>
+    <h1 class="title"><img class="logo" src="https://www.scu.edu.tw/publish/logo/jpg/logo.jpg" alt="東吳大學校徽" onerror="this.style.display='none'">東吳大學校園導覽</h1>
+        <div class="subtitle">
+            <strong>關於東吳</strong>
+            <p>東吳大學於1900年創校於中國蘇州，為中國第一所西制大學；1954在臺灣復校，為臺灣第一所私立大學。 建校百年來，秉持中、英文校訓「養天地正氣 法古今完人」、「Unto A Full-grown Man」之教育理念，辦學嚴謹，學風樸實，深具傳統，建立老字號品牌形象。</p>
+            <p>本校是以教學為主、研究兼重之綜合大學，擁有外雙溪、城中兩校區，設有人文社會、外國語文、理、法、商及巨量資料管理等六個學院，下轄 27 個學系(學位學程、院設班別)。兩校區均鄰近臺北市政治、經濟、文化中心，周邊教育、研究、學習及社會資源豐富多元，交通便捷。</p>
+        </div>
+        <div class="images">
+            <img src="https://www-ch.scu.edu.tw/storage/25524/7cf0dc51e97abd881435fcde6aaf5663.jpg" alt="東吳校園照片 1">
+            <img src="https://www-ch.scu.edu.tw/storage/24598/fdf60afd0511e84da583ba317ca0f1fc.jpg" alt="東吳校園照片 2">
+        </div>
+        <div class="buttons">
+            <button class="btn green" onclick="location.href='page-a.html'">雙溪校區</button>
+            <button class="btn orange" onclick="location.href='page-b.html'">城中校區</button>
+        </div>
+        
+</body>
+
+</html>

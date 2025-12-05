@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>城中校區建築導覽</title>
+    <style>
+        body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; line-height: 1.6; margin: 40px; background: #f4f6fb; }
+        .container { max-width: 920px; margin: 0 auto; }
+        .title { font-size: 32px; font-weight: 800; text-align: center; margin: 0 0 8px; }
+        .subtitle { text-align: center; color: #555; font-size: 16px; margin: 0 0 16px; }
+        .letters { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 8px 0 16px; }
+        .letter-btn { padding: 8px 12px; background: #e0e0e0; color: #333; border: none; cursor: pointer; transition: transform .15s ease, filter .15s ease, box-shadow .15s ease; font-weight: 600; letter-spacing: .2px; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+        .letter-btn:hover { filter: brightness(0.98); transform: scale(1.03); }
+        .content { white-space: pre-line; font-size: 16px; color: #333; background: #fff; padding: 16px; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+        .content h2 { font-size: 22px; font-weight: 800; margin: 0 0 8px; color: #ef6c00; }
+        .section { display: none; }
+        .actions { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 16px auto 0; max-width: 520px; }
+        .actions .btn { width: 100%; }
+        .btn { display: inline-block; padding: 14px 24px; background: #1a73e8; color: #fff; border: none; font-size: 16px; cursor: pointer; text-align: center; transition: transform .15s ease, filter .15s ease, box-shadow .15s ease; font-weight: 700; letter-spacing: .3px; clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%); box-shadow: 0 10px 24px rgba(0,0,0,0.10); }
+        .btn.orange { background: #ef6c00; }
+        .btn.home-return:hover { filter: brightness(0.98); transform: scale(1.03); }
+        .btn:hover { filter: brightness(0.98); transform: scale(1.04); box-shadow: 0 14px 28px rgba(0,0,0,0.12); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">城中校區建築導覽：<span id="current-letter">A</span></h1>
+        
+
+        <div class="letters">
+            <button class="letter-btn" onclick="location.hash='A'">A 第一大樓(崇基樓)</button>
+            <button class="letter-btn" onclick="location.hash='B'">B 第二大樓(鑄秋大樓)</button>
+            <button class="letter-btn" onclick="location.hash='C'">C 第三大樓</button>
+            <button class="letter-btn" onclick="location.hash='D'">D 第四大樓</button>
+            <button class="letter-btn" onclick="location.hash='E'">E 第五大樓</button>
+            <button class="letter-btn" onclick="location.hash='F'">F 第六大樓</button>
+        </div>
+
+        <div id="A" class="section content">A 第一大樓(崇基樓) 
+
+<a href="https://www.scu.edu.tw/law/" target="_blank" rel="noopener">法學院</a>、<a href="https://www.law.scu.edu.tw/" target="_blank" rel="noopener">法律學系</a>、臥龍多媒體應用中心、實習法庭、第一閱覽室、教師研究室</div>
+
+        <div id="B" class="section content">B 第二大樓(鑄秋大樓) 
+
+董事長室、校長室、副校長室、總務處聯合辦公室、國際與兩岸學術交流事務處、主管聯合辦公室、秘書室、會計室、<a href="https://www.lib.scu.edu.tw/" target="_blank" rel="noopener">圖書館城區分館</a>、電子計算機中心、招生組、<a href="https://www.scu.edu.tw/business/" target="_blank" rel="noopener">商學院</a>、<a href="https://www.scu.edu.tw/econ/" target="_blank" rel="noopener">經濟學系</a>、<a href="https://www.scu.edu.tw/acc/" target="_blank" rel="noopener">會計學系</a>、<a href="https://www.scu.edu.tw/ba/" target="_blank" rel="noopener">企業管理學系</a>、<a href="https://www.scu.edu.tw/ibsu/" target="_blank" rel="noopener">國際經營與貿易學系</a>、<a href="https://www.scu.edu.tw/feam/" target="_blank" rel="noopener">財務工程與精算數學系</a>、商學進修學士班、EMBA高階經營碩士在職專班、國際商管學程、財務金融學程、科技管理學程、商學研究發展中心、雙語學習推動中心、健康暨諮商中心(心理諮商)、學生社團辦公室與活動空間、舞蹈教室、學生會、學生議會、2123會議室、2227會議室、教師研究室</div>
+
+        <div id="C" class="section content">C 第三大樓 
+
+教務處聯合辦公室、推廣部電腦教室、健康暨諮商中心(資源教室)、教師研究室、3303-1哺(集)乳室</div>
+
+        <div id="D" class="section content">D 第四大樓 
+
+<a href="https://www.scu.edu.tw/bigdata/" target="_blank" rel="noopener">巨量資料管理學院</a>、<a href="https://www.scu.edu.tw/csim/" target="_blank" rel="noopener">資訊管理學系</a>、企業創新育成中心、富蘭克林金融科技開發中心、海量資料分析研究中心、尤努斯社會企業中心、公共政策中心、區域運輸發展中心、企業風險管理研究中心、教師研究室</div>
+
+        <div id="E" class="section content">E 第五大樓 
+
+推廣部、語言教學中心、語言教室、第二閱覽室、健康體能教室、重量訓練室、桌球室、韻律教室、體育器材室、多媒體教室、未來教室、5117哲名廳、5211作楠廳、5216菁英講堂、5615 學生學習進行室、汽車停車場、小望星廣場</div>
+
+        <div id="F" class="section content">F 第六大樓 
+
+學生事務處聯合辦公室、健康暨諮商中心(衛生保健) 、校友資拓中心、生涯發展中心、體育室、校牧室、軍訓室(校安中心) 、原資中心、校友總會、校友交誼室、游藝廣場、東吳創創基地、6601~6605會議室、據德食堂、便利商店、機車停車場</div>
+
+        <div class="actions">
+            <button class="btn orange" onclick="location.href='page-b.html'">返回城中校區</button>
+            <button class="btn home-return" onclick="location.href='index.html'">返回校園導覽首頁</button>
+        </div>
+    </div>
+
+    <script>
+    function setupHeadings() {
+        document.querySelectorAll('.section').forEach(function(el){
+            var html = el.innerHTML.trim();
+            var lines = html.split('\n');
+            if (lines.length > 0) {
+                var titleHTML = lines[0].trim();
+                var restHTML = lines.slice(1).join('\n');
+                el.innerHTML = '<h2>' + titleHTML + '</h2>' + restHTML;
+            }
+        });
+    }
+    function showSection() {
+        var letter = (location.hash || '#A').substring(1).toUpperCase();
+        document.querySelectorAll('.section').forEach(function(el){ el.style.display = 'none'; });
+        var target = document.getElementById(letter);
+        if (target) {
+            target.style.display = 'block';
+            var h = target.querySelector('h2');
+            if (h) { document.getElementById('current-letter').textContent = h.textContent.trim(); }
+        }
+    }
+    window.addEventListener('hashchange', showSection);
+    window.addEventListener('load', function(){ setupHeadings(); showSection(); });
+    </script>
+</body>
+</html>

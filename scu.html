@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東吳大學校園導覽 - 自訂頁面</title>
+    <style>
+        body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; line-height: 1.6; margin: 40px; background: #f7f8fa; }
+        .container { max-width: 920px; margin: 0 auto; }
+        .title { font-size: 36px; font-weight: 800; text-align: center; margin: 0 0 8px; background: linear-gradient(90deg, #1a73e8, #34a853); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .subtitle { text-align: center; color: #555; font-size: 18px; margin: 0 0 16px; }
+        .banner { width: 100%; height: auto; border-radius: 12px; display: block; margin: 16px 0 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+        .actions { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 16px auto 0; max-width: 520px; }
+        .actions .btn { width: 100%; }
+        .btn { display: inline-block; padding: 14px 24px; background: #1a73e8; color: #fff; border: none; font-size: 16px; cursor: pointer; text-align: center; transition: transform .15s ease, filter .15s ease, box-shadow .15s ease; font-weight: 700; letter-spacing: .3px; clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%); box-shadow: 0 10px 24px rgba(0,0,0,0.10); }
+        .btn:hover { filter: brightness(0.98); transform: scale(1.03); }
+        .btn.home-return:hover { filter: brightness(0.98); transform: scale(1.03); }
+        .btn:hover { filter: brightness(0.95); }
+    </style>
+    <link rel="preconnect" href="https://www.scu.edu.tw">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">自訂樣式頁面</h1>
+        <p class="subtitle">這個頁面完全由你掌控樣式與內容。</p>
+
+        <img class="banner" src="https://www.scu.edu.tw/entrance/anounce/Introscu/map/E32-2.png" alt="東吳大學校園導覽地圖">
+
+        <div class="actions">
+            <button class="btn home-return" onclick="location.href='index.html'">返回校園導覽首頁</button>
+        </div>
+    </div>
+</body>
+</html>

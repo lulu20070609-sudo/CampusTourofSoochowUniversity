@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>城中校區</title>
+    <style>
+        body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; line-height: 1.6; margin: 40px; background: #f4f6fb; }
+        .container { max-width: 920px; margin: 0 auto; }
+        .title { font-size: 36px; font-weight: 800; text-align: center; margin: 0 0 8px; color: #ef6c00; }
+        .subtitle { text-align: center; color: #555; font-size: 18px; margin: 0 0 16px; }
+        .banner { width: 100%; height: auto; border-radius: 12px; display: block; margin: 16px 0 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+        .actions { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 16px auto 0; max-width: 520px; }
+        .actions .btn { width: 100%; }
+        .btn { display: inline-block; padding: 14px 24px; background: #1a73e8; color: #fff; border: none; font-size: 16px; cursor: pointer; text-align: center; transition: transform .15s ease, filter .15s ease, box-shadow .15s ease; font-weight: 700; letter-spacing: .3px; clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%); box-shadow: 0 10px 24px rgba(0,0,0,0.10); }
+        .btn.secondary { background: #43a047; }
+        .btn:hover { filter: brightness(0.98); transform: scale(1.04); box-shadow: 0 14px 28px rgba(0,0,0,0.12); }
+        .btn.home-return:hover { filter: brightness(0.98); transform: scale(1.03); }
+        .letters { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 8px 0 12px; }
+        .letter-btn { padding: 8px 12px; background: #e0e0e0; color: #333; border: none; cursor: pointer; transition: transform .15s ease, filter .15s ease, box-shadow .15s ease; font-weight: 600; letter-spacing: .2px; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+        .letter-btn:hover { filter: brightness(0.98); transform: scale(1.03); }
+        .btn.green { background: #2e7d32; }
+        .btn.orange { background: #ef6c00; }
+        .content { white-space: pre-line; font-size: 16px; color: #333; background: #fff; padding: 16px; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+    </style>
+    <link rel="preconnect" href="https://www.scu.edu.tw">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">城中校區</h1>
+        
+
+
+        <div class="letters">
+            <button class="letter-btn" onclick="location.href='building-city.html#A'">A 第一大樓(崇基樓)</button>
+            <button class="letter-btn" onclick="location.href='building-city.html#B'">B 第二大樓(鑄秋大樓)</button>
+            <button class="letter-btn" onclick="location.href='building-city.html#C'">C 第三大樓</button>
+            <button class="letter-btn" onclick="location.href='building-city.html#D'">D 第四大樓</button>
+            <button class="letter-btn" onclick="location.href='building-city.html#E'">E 第五大樓</button>
+            <button class="letter-btn" onclick="location.href='building-city.html#F'">F 第六大樓</button>
+        </div>
+
+        <img class="banner" src="https://entrance.ladm.scu.edu.tw/sites/default/files/E31-2.jpg" alt="校園導覽地圖">
+
+        <div class="actions">
+            <button class="btn home-return" onclick="location.href='index.html'">返回校園導覽首頁</button>
+            <button class="btn green" onclick="location.href='page-a.html'">前往雙溪校區</button>
+        </div>
+    </div>
+</body>
+</html>
